@@ -1,0 +1,20 @@
+<!-- res/drawable/rounded_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置背景颜色 -->
+    <solid android:color="#007AFF"/>  <!-- 这里设置按钮的背景颜色，例如iOS的蓝色 -->
+
+    <!-- 设置圆角 -->
+    <corners android:radius="7dp"/>  <!-- 调整这个值来控制圆角的大小 -->
+
+    <!-- 设置按钮的边框（可选）-->
+    <stroke
+        android:color="#FFFFFF"
+    android:width="2dp"/>           <!-- 边框宽度 -->
+
+    <!-- 设置按钮的阴影效果（可选）-->
+    <padding
+        android:left="16dp"
+        android:top="12dp"
+        android:right="16dp"
+        android:bottom="12dp"/>
+</shape>

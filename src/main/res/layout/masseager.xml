@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    tools:context=".MainActivity">
+
+    <!-- 卡片内的 LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- 用户名和状态 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <!-- 用户名输入框 -->
+            <EditText
+                android:id="@+id/ma_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入昵称"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"/>
+
+            <!-- 个性签名输入框 -->
+            <EditText
+                android:id="@+id/ma_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入个性签名"
+                android:textColor="#888888"
+                android:textSize="16sp"
+                android:inputType="textMultiLine"
+                android:maxLines="2"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"/>
+
+            <!-- 保存按钮 -->
+            <Button
+                android:id="@+id/iv_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rounded_button"
+                android:contentDescription="Arrow"
+                android:text="保存"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#87CEEB"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
